@@ -1,0 +1,17 @@
+.Info {
+  max-width: 390px;
+}
+
+.Info p {
+  text-align: justify;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.link-container a:last-child {
+  margin-left: 2rem;
+}

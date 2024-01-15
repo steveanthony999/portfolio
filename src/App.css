@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;800&family=Orbitron&display=swap');
 
-.svg-background {
+.main-container {
   width: 100%;
   height: 100vh;
   background: linear-gradient(
@@ -12,109 +12,6 @@
   );
   overflow: hidden;
   position: relative;
-}
-
-.svg-background svg {
-  width: 100%;
-  height: 100%;
-  display: block;
-  opacity: 0.25;
-}
-
-@keyframes move1 {
-  0% {
-    transform: translate(0);
-  }
-  50% {
-    transform: translate(-200px, 100px);
-  }
-  100% {
-    transform: translate(0);
-  }
-}
-
-.svg-background path:nth-child(1) {
-  animation: move1 60s infinite ease-in-out;
-}
-
-.svg-background path:nth-child(2) {
-  animation: move1 61s infinite ease-in-out;
-}
-
-.svg-background path:nth-child(3) {
-  animation: move1 62s infinite ease-in-out;
-}
-
-.svg-background path:nth-child(4) {
-  animation: move1 63s infinite ease-in-out;
-}
-
-.svg-background path:nth-child(5) {
-  animation: move1 64s infinite ease-in-out;
-}
-
-.svg-background path:nth-child(6) {
-  animation: move1 65s infinite ease-in-out;
-}
-
-.svg-background path:nth-child(7) {
-  animation: move1 66s infinite ease-in-out;
-}
-
-.svg-background path:nth-child(8) {
-  animation: move1 67s infinite ease-in-out;
-}
-
-.svg-background path:nth-child(9) {
-  animation: move1 68s infinite ease-in-out;
-}
-
-.svg-background path:nth-child(10) {
-  animation: move1 69s infinite ease-in-out;
-}
-
-.svg-background path:nth-child(11) {
-  animation: move1 70s infinite ease-in-out;
-}
-
-.svg-background path:nth-child(12) {
-  animation: move1 71s infinite ease-in-out;
-}
-
-.svg-background path:nth-child(13) {
-  animation: move1 72s infinite ease-in-out;
-}
-
-.svg-background path:nth-child(14) {
-  animation: move1 73s infinite ease-in-out;
-}
-
-.svg-background path:nth-child(15) {
-  animation: move1 74s infinite ease-in-out;
-}
-
-.svg-background path:nth-child(16) {
-  animation: move1 75s infinite ease-in-out;
-}
-
-.svg-background path:nth-child(17) {
-  animation: move1 76s infinite ease-in-out;
-}
-
-.svg-background path:nth-child(18) {
-  animation: move1 77s infinite ease-in-out;
-}
-
-.svg-background path:nth-child(19) {
-  animation: move1 78s infinite ease-in-out;
-}
-
-.svg-background path:nth-child(20) {
-  animation: move1 79s infinite ease-in-out;
-}
-
-.svg-background path:nth-child(21) {
-  animation: move1 80s infinite ease-in-out;
 }
 
 .container {
