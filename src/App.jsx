@@ -1,6 +1,9 @@
+import { useState } from 'react';
 import './App.css';
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <>
       <div className='svg-background'>
@@ -333,7 +336,15 @@ function App() {
             <div className='left-bottom'>left bottom</div>
           </div>
           <div className='right'>
-            <div className='right-top'>right top</div>
+            <div className='right-top'>
+              <div
+                id='menu'
+                className={`btn3 ${isMenuOpen && 'open'}`}
+                onClick={() => setIsMenuOpen((prev) => !prev)}
+              >
+                <div className='icon'></div>
+              </div>
+            </div>
             <div className='right-bottom'>
               <h1>
                 Steven <br /> Woodward

@@ -159,3 +159,50 @@
 .container .right .right-bottom h4 {
   font-weight: 200;
 }
+
+.btn3 {
+  width: 60px;
+  height: 60px;
+  top: 100px;
+  left: 240px;
+  transition-duration: 0.5s;
+}
+.btn3 .icon {
+  transition-duration: 0.5s;
+  position: absolute;
+  height: 0px;
+  width: 60px;
+  top: 30px;
+  background-color: #fff;
+}
+.btn3 .icon:before {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: 60px;
+  height: 6px;
+  background-color: #fff;
+  content: '';
+  top: -10px;
+}
+.btn3 .icon:after {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: 40px;
+  height: 6px;
+  background-color: #fff;
+  content: '';
+  top: 15px;
+  right: 0;
+}
+.btn3.open .icon {
+  transition-duration: 0.5s;
+}
+.btn3.open .icon:before {
+  transform: rotateZ(135deg) scaleX(0.75) translate(13px, -13px);
+}
+.btn3.open .icon:after {
+  transform: rotateZ(-135deg) scaleX(1.13) translate(11px, 0);
+}
+.btn3:hover {
+  cursor: pointer;
+}
