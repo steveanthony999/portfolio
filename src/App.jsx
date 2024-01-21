@@ -4,6 +4,7 @@ import SocialBar from './components/SocialBar';
 import SvgBackground from './components/SvgBackground';
 import Info from './components/Info';
 import ProjectsMenu from './components/ProjectsMenu';
+import Me from './components/Me';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,11 +35,7 @@ function App() {
             <SocialBar />
           </div>
           <div className='right-bottom'>
-            <h1>
-              Steven <br /> Woodward
-            </h1>
-            <br />
-            <h4>S o f t w a r e &nbsp; E n g i n e e r</h4>
+            <Me />
           </div>
         </div>
       </div>

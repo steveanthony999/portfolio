@@ -1,0 +1,25 @@
+{
+  "projects": [
+    {
+      "key": "aboutme",
+      "title": "About Me",
+      "description": "I’m Steve, a Las Vegas-based software engineer.  Still in the early stages of my professional development and currently immersed in my academic journey, I have embarked on a path filled with freelance endeavors, contributions to open-source projects, and entrepreneurial ambitions. This exploratorations are not only sharpening my understanding of the complexities of software systems but also nurturing my passion for continuous learning. My interests extend into the liberal arts and I am inspired by their intersection with technology. As I navigate through this evolving landscape, I am looking for opportunities to collaborate and grow in a professional environment, keen to apply my budding skills and absorb new knowledge in this amazingly creative field.",
+      "buttons": [
+        {
+          "resume": "Resumé",
+          "blog": "Blog"
+        }
+      ]
+    },
+    {
+      "key": "productfeedbackapp",
+      "title": "Product Feedback App",
+      "description": "Product Feedback App is a Frontend Mentor Guru Challenge that I took full-stack using the MERN stack and deployed to Linode."
+    },
+    {
+      "key": "galeriaslideshow",
+      "title": "Galeria Slideshow",
+      "description": "PGaleria Slideshow is a Frontend Mentor Pro challenge that focuses on the masonry layout and slideshow."
+    }
+  ]
+}

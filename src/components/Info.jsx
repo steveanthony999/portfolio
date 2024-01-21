@@ -1,26 +1,36 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
+import { FaDisplay } from 'react-icons/fa6';
+import { FaCode } from 'react-icons/fa';
 import './Info.css';
-import { faDisplay, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
+import infoData from '../info.json';
 
 const Info = () => {
+  const { projectInfo } = useSelector((state) => state.info);
+  const [title, setTitle] = useState();
+  const [description, setDescription] = useState();
+
+  useEffect(() => {
+    setTitle(
+      infoData.projects.filter((data) => data.key === projectInfo)[0].title
+    );
+    setDescription(
+      infoData.projects.filter((data) => data.key === projectInfo)[0]
+        .description
+    );
+  }, [projectInfo]);
+
   return (
     <div className='Info'>
-      <h2>Title</h2>
+      <h2>{title}</h2>
       <hr />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto assumenda
-        id consequuntur perspiciatis et autem nam suscipit reiciendis,
-        exercitationem commodi amet dolorem totam unde veritatis iste
-        consequatur, nihil ipsa doloremque mollitia. Accusamus perferendis magni
-        quasi omnis fuga amet soluta officia officiis odit autem. Voluptatum
-        quod saepe dolore eveniet nostrum incidunt!
-      </p>
+      <p>{description}</p>
       <div className='link-container'>
         <a href='#' target='_blank'>
-          <FontAwesomeIcon icon={faDisplay} /> Site
+          <FaDisplay /> &nbsp;&nbsp;Site
         </a>
         <a href='#' target='_blank'>
-          <FontAwesomeIcon icon={faLaptopCode} /> Code
+          <FaCode /> &nbsp;&nbsp;Code
         </a>
       </div>
     </div>

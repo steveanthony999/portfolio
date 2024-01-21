@@ -12,6 +12,12 @@
   margin-top: 1rem;
 }
 
+.link-container a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .link-container a:last-child {
   margin-left: 2rem;
 }
