@@ -1,17 +1,19 @@
 import { useState } from 'react';
-import './App.css';
 import SocialBar from './components/SocialBar';
-import SvgBackground from './components/SvgBackground';
+// import SvgBackground from './components/SvgBackground';
 import Info from './components/Info';
 import ProjectsMenu from './components/ProjectsMenu';
 import Me from './components/Me';
+import Doggy from './components/Doggy';
+import './App.css';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <div className='main-container'>
-      <SvgBackground />
+      {/* <SvgBackground /> */}
+      <Doggy />
       <div className='container'>
         <div className='left'>
           <div className='left-top'>
