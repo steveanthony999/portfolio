@@ -3,6 +3,7 @@ import './App.css';
 import SocialBar from './components/SocialBar';
 import SvgBackground from './components/SvgBackground';
 import Info from './components/Info';
+import ProjectsMenu from './components/ProjectsMenu';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,7 +16,9 @@ function App() {
           <div className='left-top'>
             <Info />
           </div>
-          <div className='left-bottom'>left bottom</div>
+          <div className='left-bottom'>
+            <ProjectsMenu />
+          </div>
         </div>
         <div className='right'>
           <div className='right-top'>

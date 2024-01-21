@@ -1,0 +1,28 @@
+.ProjectsMenu {
+  max-width: 390px;
+}
+
+.ProjectsMenu ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.ProjectsMenu ul li {
+  margin-top: 2rem;
+}
+
+.ProjectsMenu ul li:first-child {
+  margin-top: 0;
+}
+
+.ProjectsMenu ul li span {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.ProjectsMenu ul li svg {
+  margin-top: 2px;
+  margin-left: 4px;
+}
