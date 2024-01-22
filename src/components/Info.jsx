@@ -10,18 +10,6 @@ import infoData from '../info.json';
 const Info = () => {
   const { projectInfo } = useSelector((state) => state.info);
   const [project, setProject] = useState({});
-  // const [title, setTitle] = useState();
-  // const [description, setDescription] = useState();
-
-  // useEffect(() => {
-  //   setTitle(
-  //     infoData.projects.filter((data) => data.key === projectInfo)[0].title
-  //   );
-  //   setDescription(
-  //     infoData.projects.filter((data) => data.key === projectInfo)[0]
-  //       .description
-  //   );
-  // }, [projectInfo]);
 
   useEffect(() => {
     const projectData = infoData.projects.find(
