@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import SocialBar from './components/SocialBar';
-// import SvgBackground from './components/SvgBackground';
 import Info from './components/Info';
 import ProjectsMenu from './components/ProjectsMenu';
 import Me from './components/Me';
@@ -12,7 +11,6 @@ function App() {
 
   return (
     <div className='main-container'>
-      {/* <SvgBackground /> */}
       <Doggy />
       <div className='container'>
         <div className='left'>

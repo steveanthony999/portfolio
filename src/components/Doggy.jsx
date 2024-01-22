@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import DoggyImage from '../assets/doggy.png';
+import './Doggy.css';
 
 const Doggy = () => {
   useEffect(() => {
@@ -8,11 +9,11 @@ const Doggy = () => {
     const moveDoggy = () => {
       animationCount++;
 
-      const xStart = Math.random() > 0.5 ? -200 : window.innerWidth + 200;
-      const yStart = Math.random() > 0.5 ? -200 : window.innerHeight + 200;
+      const xStart = Math.random() > 0.5 ? -200 : window.innerWidth;
+      const yStart = Math.random() > 0.5 ? -200 : window.innerHeight;
 
-      const xEnd = Math.random() > 0.5 ? -200 : window.innerWidth + 200;
-      const yEnd = Math.random() > 0.5 ? -200 : window.innerHeight + 200;
+      const xEnd = Math.random() > 0.5 ? -200 : window.innerWidth;
+      const yEnd = Math.random() > 0.5 ? -200 : window.innerHeight;
 
       const rotation = Math.random() * 360;
       const duration = 5 + Math.random() * 50;
